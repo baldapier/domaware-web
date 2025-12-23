@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SBI - Sistema de Búsqueda Inteligente</title>
+
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS principal -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <style>
+        /* HERO COMPLETO*/
+        .hero-sbi {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+        }
+
+
+        .hero-sbi::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 2;
+        }
+
+        .hero-sbi .content {
+            position: relative;
+            z-index: 3;
+        }
+
+        /* TITULOS*/
+        .section-title-small h2 {
+            color: #FF8B1F;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        /* BOTONES HERO*/
+        .btn-hero-sbi {
+            background: #FF8B1F !important;
+            color: white !important;
+            padding: 14px 36px;
+            font-size: 18px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            min-width: 260px;
+
+            text-align: center;
+            transition: 0.2s ease;
+        }
+
+        .btn-hero-sbi:hover {
+            background: #e57717 !important;
+            transform: translateY(-3px);
+        }
+
+
+        /*  CARACTERÍSTICAS*/
+
+        .card-feature {
+            border: none;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            background: #fff;
+            transition: 0.2s;
+        }
+
+        .card-feature:hover {
+            transform: translateY(-4px);
+        }
+
+        .card-feature i {
+            font-size: 32px;
+            color: #FF8B1F;
+            margin-bottom: 12px;
+        }
+
+        .card-feature .detalle {
+            font-size: 15px;
+            color: #444;
+            margin-top: 12px;
+            opacity: 1 !important;
+            max-height: none !important;
+            overflow: visible !important;
+        }
+
+
+        /* BENEFICIOS */
+        .card-benefit {
+            border: none;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            background: #fff;
+            transition: 0.2s;
+        }
+
+        .card-benefit:hover {
+            transform: translateY(-4px);
+        }
+
+        .card-benefit i {
+            font-size: 32px;
+            color: #FF8B1F;
+            margin-bottom: 12px;
+        }
+
+        .card-benefit .detalle {
+            font-size: 15px;
+            color: #444;
+            margin-top: 12px;
+            opacity: 1 !important;
+            max-height: none !important;
+            overflow: visible !important;
+        }
+
+        /* Para que TODAS las tarjetas tengan el mismo alto */
+        .card-feature {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-feature .detalle {
+            margin-top: auto;
+        }
+
+        .card-benefit {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-benefit .detalle {
+            margin-top: auto;
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center">
+
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="assets/img/Logo + letra - blanco - sin.png" alt="Domaware" class="logo-img-full">
+            </a>
+        </div>
+    </header>
+
+
+
+    <section id="hero-sbi" class="hero-sbi">
+
+        <!-- IMAGEN DE FONDO -->
+        <img src="assets/img/fondo2.2.png" alt="" class="hero-bg">
+
+        <!-- CONTENIDO -->
+        <div class="container content">
+
+            <h1 style="color:#FF8B1F; font-size:80px; font-weight:800; margin-bottom:18px;">
+                SBI
+            </h1>
+
+            <p style="color:#f2f2f2; font-size:30px; max-width:900px; margin:0 auto;">
+                El CRM inteligente conectado a datos confiables para ventas, créditos y cobranzas.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <section id="que-es-sbi" class="section" style="padding-top:40px;">
+        <div class="container">
+
+            <div class="row gy-4 align-items-center">
+
+                <!-- TEXTO -->
+                <div class="col-lg-6">
+
+                    <h2 style="font-weight:800; color:#FF8B1F;">¿Qué es SBI?</h2>
+
+                    <p style="font-size:17px; margin-top:12px;">
+                        SBI es un aplicativo tipo CRM enriquecido con datos confiables, diseñado para optimizar los
+                        procesos de
+                        ventas, créditos y cobranzas. Permite gestionar clientes, segmentar bases, automatizar tareas y
+                        tomar
+                        decisiones basadas en información actualizada.
+                    </p>
+
+                    <ul style="list-style:none; padding-left:0; margin-top:18px;">
+                        <li><i class="bi bi-check-circle-fill" style="color:#FF8B1F;"></i> Optimiza ventas, créditos y
+                            cobranzas</li>
+                        <li><i class="bi bi-check-circle-fill" style="color:#FF8B1F;"></i> Incrementa la tasa de
+                            contacto</li>
+                        <li><i class="bi bi-check-circle-fill" style="color:#FF8B1F;"></i> Evalúa riesgos con datos
+                            confiables</li>
+                        <li><i class="bi bi-check-circle-fill" style="color:#FF8B1F;"></i> Automatiza tareas repetitivas
+                        </li>
+                        <li><i class="bi bi-check-circle-fill" style="color:#FF8B1F;"></i> Panel de control para
+                            supervisión</li>
+                    </ul>
+
+
+
+                </div>
+
+                <!-- IMAGEN -->
+                <div class="col-lg-6">
+                    <img src="assets/img/sbi2.0.png" class="img-fluid rounded-4 shadow" alt="¿Qué es SBI?">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <main class="main" style="margin-top:60px;">
+
+
+        <!-- CARACTERÍSTICAS -->
+        <section id="caracteristicas" class="section">
+            <div class="container">
+
+                <div class="section-title-small text-start mb-5">
+                    <h2>Características principales</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card-feature">
+                            <i class="bi bi-database-check"></i>
+                            <h5>Integración de Datos</h5>
+                            <div class="detalle">
+                                Conexión con bases de datos confiables para acceder a información precisa y actualizada,
+                                facilitando decisiones estratégicas con mayor respaldo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-feature">
+                            <i class="bi bi-people"></i>
+                            <h5>Gestión de Clientes</h5>
+                            <div class="detalle">
+                                Organiza, segmenta y perfila información clave para un seguimiento más eficiente.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-feature">
+                            <i class="bi bi-geo-alt"></i>
+                            <h5>Clientes Inubicables</h5>
+                            <div class="detalle">
+                                Herramientas avanzadas para localizar y contactar clientes difíciles de ubicar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-feature">
+                            <i class="bi bi-gear"></i>
+                            <h5>Automatización</h5>
+                            <div class="detalle">
+                                Procesos masivos automáticos que reducen tiempos operativos y costos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-feature">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <h5>Análisis Predictivo</h5>
+                            <div class="detalle">
+                                Detecta oportunidades, patrones y riesgos utilizando datos reales.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-feature">
+                            <i class="bi bi-speedometer2"></i>
+                            <h5>Dashboard</h5>
+                            <div class="detalle">
+                                Supervisión del desempeño del equipo en tiempo real.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- BENEFICIOS -->
+        <section id="beneficios" class="section">
+            <div class="container">
+
+                <div class="section-title-small text-start mb-5">
+                    <h2>Beneficios</h2>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-4">
+                        <div class="card-benefit">
+                            <i class="bi bi-telephone-outbound"></i>
+                            <h5>Mayor tasa de contacto con clientes</h5>
+                            <div class="detalle">
+                                El aumento en la contactabilidad impulsa directamente los resultados de ventas y
+                                cobranzas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-benefit">
+                            <i class="bi bi-graph-up-arrow"></i>
+                            <h5>Incrementa la productividad del equipo</h5>
+                            <div class="detalle">
+                                Menos tareas manuales, más tiempo para gestiones estratégicas.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-benefit">
+                            <i class="bi bi-lightning-charge"></i>
+                            <h5>Decisiones más rápidas y efectivas</h5>
+                            <div class="detalle">
+                                Datos actualizados permiten respuestas oportunas y mejor gestión.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-benefit">
+                            <i class="bi bi-cash-coin"></i>
+                            <h5>Reducción de costos operativos</h5>
+                            <div class="detalle">
+                                La automatización disminuye gastos y mejora el rendimiento operativo.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-benefit">
+                            <i class="bi bi-person-check"></i>
+                            <h5>Interacciones personalizadas</h5>
+                            <div class="detalle">
+                                Mejor experiencia del cliente gracias a perfiles más precisos.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card-benefit">
+                            <i class="bi bi-shield-lock"></i>
+                            <h5>Plataforma escalable y segura</h5>
+                            <div class="detalle">
+                                Crece con tu empresa manteniendo la seguridad y estabilidad.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <a href="index.html#services" class="btn btn-hero-sbi"
+            style="display:block; width:max-content; margin:40px auto;">
+            Regresar
+        </a>
+
+
+    </main>
+
+
+    <!-- JS Funcionalidad -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
