@@ -1871,3 +1871,9 @@ section,
   height: auto;
   border-radius: 12px;
 }
+
+.footer .copyright p {
+  font-family: 'Raleway', sans-serif !important;
+
+
+}
